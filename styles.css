@@ -1,5 +1,7 @@
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -15,7 +17,6 @@
 
 .bg-img {
     height: 100vh;
-
 }
 
 .logo-banner {
@@ -47,11 +48,12 @@
     background-color: rgb(241, 241, 238);
     margin-left: 31%;
     padding: 50px 100px 100px 30px;
+    height: 100vh;
 }
 
 .directions {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     line-height: 1.3;
 }
 
@@ -61,6 +63,72 @@
 }
 
 .form-wrapper {
+    margin: 50px -100px 20px -30px;
     background-color: white;
+    padding: 20px 0;
+    box-shadow: 5px 5px 5px rgba(127, 127, 133, 0.2);
+}
 
+.form-title {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+form {
+    width: 480px;
+    margin: 20px 0 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: .1rem;
+    font-weight: 550;
+}
+
+input {
+    margin-top: 3px;
+    display: block;
+    width: 200px;
+    padding: 5px 7px;
+    font-size: 1.1rem;
+}
+
+input:focus {
+    box-shadow: 5px 5px 5px rgba(127, 127, 133, 0.2);
+}
+
+input:invalid {
+    background-color: rgb(255, 0, 0, 0.1);
+}
+
+.submit-button {
+    background-color: rgb(45, 112, 59);
+    position: absolute;
+    top: 570px;
+    padding: 10px 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(56, 100, 73, 0.2);
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.login {
+    margin-top: 100px;
+}
+
+a {
+    color: rgb(23, 44, 46);
+    text-decoration: none;
+    font-weight: bold;
 }
